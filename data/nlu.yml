@@ -1,0 +1,356 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_exercise_advice
+  examples: |
+    - What exercise should I do?
+    - Suggest me some exercises.
+    - How to stay fit?
+    - What should I do to stay healthy?
+    - Give me some fitness tips.
+
+- intent: ask_healthy_lifestyle
+  examples: |
+    - What is a healthy lifestyle?
+    - How to live a healthy life?
+    - Give me tips for a healthy lifestyle.
+    - How should I maintain my health?
+    - Suggest me a healthy daily routine.
+
+- intent: ask_mild_fever_advice
+  examples: |
+    - What should I do for mild fever?
+    - I have a mild fever, any advice?
+    - How to treat mild fever at home?
+    - What home remedy can I use for mild fever?
+    - Suggest me something for mild fever.
+
+- intent: ask_high_fever_advice
+  examples: |
+    - What should I do for high fever?
+    - I have a high fever, any advice?
+    - How to treat high fever?
+    - What should I do when I have a high fever?
+    - Give me some tips for managing high fever.
+
+- intent: ask_stomach_pain_advice
+  examples: |
+    - What to do for stomach pain?
+    - I have stomach pain, what should I do?
+    - Suggest me something for stomach pain.
+    - How to treat stomach pain at home?
+    - What can I do for stomach pain relief?
+
+- intent: ask_doctor_schedule
+  examples: |
+    - I need to schedule a doctor's appointment.
+    - How can I book a doctor?
+    - Can you help me schedule an appointment?
+    - I want to see a doctor, can you arrange that?
+    - Help me book an appointment with a doctor.
+
+- intent: ask_headache_advice
+  examples: |
+    - What should I do for a headache?
+    - I have a headache, what can I do?
+    - Any tips for headache relief?
+    - How to treat a headache?
+    - Suggest me something for my headache.
+
+- intent: ask_cold_flu_advice
+  examples: |
+    - How to treat a cold?
+    - I have flu, what should I do?
+    - What can I do for cold and flu?
+    - How to recover from a cold quickly?
+    - Suggest me remedies for flu.
+
+- intent: ask_diet_advice
+  examples: |
+    - What should I eat for a healthy diet?
+    - Suggest me a balanced diet.
+    - How can I improve my diet?
+    - What is a good diet plan?
+    - Give me some diet tips.
+
+- intent: ask_skin_care_advice
+  examples: |
+    - How to take care of my skin?
+    - Suggest me a skincare routine.
+    - What should I do for healthy skin?
+    - How to avoid pimples?
+    - Give me some skin care tips.
+
+- intent: ask_sleep_advice
+  examples: |
+    - How to get better sleep?
+    - I have trouble sleeping, what can I do?
+    - What are some tips for good sleep?
+    - How much sleep should I get?
+    - Suggest me something for better sleep.
+
+- intent: ask_weight_loss_advice
+  examples: |
+    - How can I lose weight?
+    - Suggest me some weight loss tips.
+    - What should I do to reduce weight?
+    - How to lose weight quickly?
+    - Any advice for losing weight?
+
+- intent: ask_weight_gain_advice
+  examples: |
+    - How can I gain weight?
+    - Suggest me some tips to gain weight.
+    - What should I eat to gain weight?
+    - How to increase my weight?
+    - Any advice for gaining weight?
+
+- intent: ask_diabetes_advice
+  examples: |
+    - What should I do if I have diabetes?
+    - How to manage diabetes?
+    - Suggest me some tips for diabetes.
+    - What diet is good for diabetes?
+    - How to control blood sugar levels?
+
+- intent: ask_blood_pressure_advice
+  examples: |
+    - How to manage high blood pressure?
+    - What should I do if my blood pressure is high?
+    - Suggest me something for high blood pressure.
+    - How to lower blood pressure naturally?
+    - What can I do for low blood pressure?
+
+- intent: ask_allergy_advice
+  examples: |
+    - How to treat allergies?
+    - I have an allergy, what can I do?
+    - What should I do for an allergic reaction?
+    - Suggest me something for my allergy.
+    - How to prevent allergies?
+
+- intent: ask_injury_advice
+  examples: |
+    - What should I do for a minor injury?
+    - How to treat a cut or wound?
+    - I hurt myself, what can I do?
+    - Suggest me something for a small injury.
+    - How to handle a bruise?
+
+- intent: ask_depression_advice
+  examples: |
+    - How to deal with depression?
+    - I feel depressed, what should I do?
+    - Suggest me something to improve my mood.
+    - What can I do if I’m feeling low?
+    - Any tips for dealing with depression?
+
+- intent: ask_anxiety_advice
+  examples: |
+    - How to manage anxiety?
+    - I’m feeling anxious, what should I do?
+    - What can I do to reduce anxiety?
+    - Suggest me some tips for anxiety relief.
+    - How to calm down when anxious?
+
+- intent: ask_back_pain_advice
+  examples: |
+    - What should I do for back pain?
+    - My back hurts, what can I do?
+    - How to relieve back pain?
+    - Suggest me something for back pain.
+    - What can I do to reduce back pain?
+
+- intent: ask_joint_pain_advice
+  examples: |
+    - What should I do for joint pain?
+    - My joints hurt, what can I do?
+    - How to relieve joint pain?
+    - Suggest me something for joint pain.
+    - What can I do to reduce joint pain?
+
+- intent: ask_healthy_habits_advice
+  examples: |
+    - What are some healthy habits?
+    - Suggest me some good daily habits.
+    - How to develop healthy habits?
+    - What habits should I follow for good health?
+    - Give me some tips on healthy habits.
+
+- intent: ask_mental_health_advice
+  examples: |
+    - How to take care of my mental health?
+    - What should I do for better mental health?
+    - Suggest me some mental health tips.
+    - How to stay mentally healthy?
+    - What can I do to improve my mental health?
+
+- intent: ask_hydration_advice
+  examples: |
+    - How much water should I drink daily?
+    - Why is staying hydrated important?
+    - How to stay hydrated throughout the day?
+    - What are the benefits of drinking water?
+    - Give me some tips for staying hydrated.
+
+- intent: ask_eye_care_advice
+  examples: |
+    - How to take care of my eyes?
+    - What should I do for good eyesight?
+    - Suggest me some eye care tips.
+    - How to reduce eye strain?
+    - What can I do to protect my eyes?
+
+- intent: ask_cough_advice
+  examples: |
+    - How to treat a cough?
+    - What should I do for a persistent cough?
+    - I have a bad cough, what can I do?
+    - Suggest me something for cough relief.
+    - How to stop coughing?
+
+- intent: ask_hygiene_advice
+  examples: |
+    - What should I do to maintain hygiene?
+    - Suggest me some personal hygiene tips.
+    - How to stay clean and healthy?
+    - What are some good hygiene practices?
+    - How can I improve my hygiene?
+
+- intent: ask_fatigue_advice
+  examples: |
+    - How to deal with fatigue?
+    - I feel tired all the time, what can I do?
+    - Suggest me something to boost my energy.
+    - What should I do if I feel exhausted?
+    - How to overcome tiredness?
+
+- intent: ask_head_cold_advice
+  examples: |
+    - What to do for a head cold?
+    - How to get rid of a stuffy nose?
+    - Suggest me something for a cold.
+    - I have a cold, what should I do?
+    - How to recover from a head cold?
+
+- intent: ask_sore_throat_advice
+  examples: |
+    - How to treat a sore throat?
+    - What should I do for throat pain?
+    - I have a sore throat, any advice?
+    - Suggest me something for throat pain.
+    - How to get relief from a sore throat?
+
+- intent: ask_insomnia_advice
+  examples: |
+    - How to deal with insomnia?
+    - I can’t sleep, what should I do?
+    - Suggest me something for better sleep.
+    - What can I do to sleep better?
+    - How to overcome insomnia?
+
+- intent: ask_sunburn_advice
+  examples: |
+    - How to treat sunburn?
+    - I got sunburned, what should I do?
+    - What can I do for sunburn relief?
+    - Suggest me something for sunburn.
+    - How to soothe a sunburn?
+- intent: schedule_appointment
+  examples: |
+    - I need to schedule an appointment with a doctor on [September 5th](date) at [10 AM](time)
+    - Book an appointment for [tomorrow](date) at [3 PM](time)
+    - Can you schedule an appointment with Dr. [Sharma](doctor) on [Friday](date) at [2 PM](time)?
+    - I want to see Dr. [Mehta](doctor) on [Monday](date) at [11 AM](time)
+    - Set an appointment for [next Wednesday](date) at [9 AM](time)
+
+

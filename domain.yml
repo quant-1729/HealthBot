@@ -1,0 +1,180 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_exercise_advice
+  - ask_healthy_lifestyle
+  - ask_mild_fever_advice
+  - ask_high_fever_advice
+  - ask_stomach_pain_advice
+  - ask_doctor_schedule
+  - ask_headache_advice
+  - ask_cold_flu_advice
+  - ask_diet_advice
+  - ask_skin_care_advice
+  - ask_sleep_advice
+  - ask_weight_loss_advice
+  - ask_weight_gain_advice
+  - ask_diabetes_advice
+  - ask_blood_pressure_advice
+  - ask_allergy_advice
+  - ask_injury_advice
+  - ask_depression_advice
+  - ask_anxiety_advice
+  - ask_back_pain_advice
+  - ask_joint_pain_advice
+  - ask_healthy_habits_advice
+  - ask_mental_health_advice
+  - ask_hydration_advice
+  - ask_eye_care_advice
+  - ask_cough_advice
+  - ask_hygiene_advice
+  - ask_fatigue_advice
+  - ask_head_cold_advice
+  - ask_sore_throat_advice
+  - ask_insomnia_advice
+  - ask_sunburn_advice
+  - schedule_appointment
+
+entities:
+  - date
+  - time
+  - doctor
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_exercise_advice:
+    - text: "Regular exercise is key to maintaining a healthy body and mind. Aim for at least 30 minutes of moderate activity most days."
+
+  utter_healthy_lifestyle:
+    - text: "A healthy lifestyle includes balanced nutrition, regular exercise, sufficient sleep, and managing stress effectively."
+
+  utter_mild_fever_advice:
+    - text: "For a mild fever, rest, stay hydrated, and consider taking over-the-counter fever reducers like paracetamol."
+
+  utter_high_fever_advice:
+    - text: "If your fever is high, monitor your symptoms closely, stay hydrated, and seek medical advice if it persists or worsens."
+
+  utter_stomach_pain_advice:
+    - text: "Stomach pain can have many causes. Rest, avoid heavy foods, and drink clear fluids. If pain persists, consult a doctor."
+
+  utter_doctor_schedule:
+    - text: "Please provide your location and preferred time, and I'll help you find a doctor available near you."
+
+  utter_headache_advice:
+    - text: "For headaches, ensure you're well-hydrated, rest in a quiet, dark room, and consider over-the-counter pain relief."
+
+  utter_cold_flu_advice:
+    - text: "To manage cold or flu symptoms, rest, stay hydrated, and consider using over-the-counter medications to relieve discomfort."
+
+  utter_diet_advice:
+    - text: "A balanced diet includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Avoid processed foods and excessive sugar."
+
+  utter_skin_care_advice:
+    - text: "Maintain a regular skincare routine, stay hydrated, and use sunscreen to protect your skin from damage."
+
+  utter_sleep_advice:
+    - text: "Aim for 7-9 hours of quality sleep each night. Establish a bedtime routine, avoid screens before bed, and create a relaxing sleep environment."
+
+  utter_weight_loss_advice:
+    - text: "For weight loss, focus on a balanced diet with portion control, regular physical activity, and staying consistent with healthy habits."
+
+  utter_weight_gain_advice:
+    - text: "To gain weight, increase your calorie intake with nutrient-dense foods, combine strength training with your diet, and eat more frequently."
+
+  utter_diabetes_advice:
+    - text: "Managing diabetes involves monitoring your blood sugar, following a balanced diet, exercising regularly, and taking prescribed medications."
+
+  utter_blood_pressure_advice:
+    - text: "Maintain healthy blood pressure by eating a balanced diet, reducing sodium intake, exercising, and managing stress."
+
+  utter_allergy_advice:
+    - text: "To manage allergies, avoid known triggers, use antihistamines, and consider consulting a doctor for more specific treatment options."
+
+  utter_injury_advice:
+    - text: "For minor injuries, rest the affected area, apply ice, and elevate it. If the injury is severe or doesn't improve, seek medical attention."
+
+  utter_depression_advice:
+    - text: "If you're feeling depressed, it's important to talk to someone you trust and consider seeking professional help. Regular exercise and a healthy diet can also support your mental health."
+
+  utter_anxiety_advice:
+    - text: "Managing anxiety involves deep breathing exercises, mindfulness, regular physical activity, and sometimes seeking professional help."
+
+  utter_back_pain_advice:
+    - text: "For back pain, maintain good posture, stay active with gentle exercises, and consider over-the-counter pain relief. If pain persists, consult a doctor."
+
+  utter_joint_pain_advice:
+    - text: "Joint pain can often be managed with rest, gentle exercise, and anti-inflammatory medications. If the pain persists, seek medical advice."
+
+  utter_healthy_habits_advice:
+    - text: "Healthy habits include regular exercise, a balanced diet, staying hydrated, getting enough sleep, and managing stress effectively."
+
+  utter_mental_health_advice:
+    - text: "Mental health is just as important as physical health. Practice self-care, stay connected with loved ones, and don't hesitate to seek professional help if needed."
+
+  utter_hydration_advice:
+    - text: "Staying hydrated is essential for overall health. Aim to drink at least 8 glasses of water a day, more if you're active or in a hot climate."
+
+  utter_eye_care_advice:
+    - text: "For healthy eyes, take regular breaks from screens, wear sunglasses outdoors, and ensure you're getting enough vitamin A in your diet."
+
+  utter_cough_advice:
+    - text: "For a cough, stay hydrated, use a humidifier, and consider cough drops or honey. If the cough persists, consult a doctor."
+
+  utter_hygiene_advice:
+    - text: "Good hygiene practices include regular hand washing, bathing, oral care, and keeping your living space clean."
+
+  utter_fatigue_advice:
+    - text: "To combat fatigue, ensure you're getting enough sleep, eating a balanced diet, staying hydrated, and managing stress effectively."
+
+  utter_head_cold_advice:
+    - text: "For a head cold, rest, stay hydrated, and consider over-the-counter medications to relieve symptoms."
+
+  utter_sore_throat_advice:
+    - text: "Soothe a sore throat with warm salt water gargles, honey, and staying hydrated. If it persists, consider seeing a doctor."
+
+  utter_insomnia_advice:
+    - text: "For insomnia, establish a regular sleep routine, avoid caffeine in the evening, and create a relaxing bedtime environment."
+
+  utter_sunburn_advice:
+    - text: "For sunburn, apply aloe vera or a moisturizing lotion, stay hydrated, and avoid further sun exposure until the burn heals."
+
+  utter_ask_date:
+    - text: "Sure, what date would you prefer for your appointment?"
+
+  utter_ask_time:
+    - text: "Got it! What time works best for you?"
+
+  utter_confirm_appointment:
+    - text: "Your appointment with Dr. {doctor} is scheduled for {date} at {time}. Would you like a reminder?"
+
+  utter_reschedule_appointment:
+    - text: "Your appointment has been rescheduled to {date} at {time}. Is there anything else I can help with?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

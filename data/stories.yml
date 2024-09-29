@@ -1,0 +1,205 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: respond_to_exercise_advice
+  steps:
+    - intent: ask_exercise_advice
+    - action: utter_exercise_advice
+
+- story: respond_to_healthy_lifestyle
+  steps:
+    - intent: ask_healthy_lifestyle
+    - action: utter_healthy_lifestyle
+
+- story: respond_to_mild_fever_advice
+  steps:
+    - intent: ask_mild_fever_advice
+    - action: utter_mild_fever_advice
+
+- story: respond_to_high_fever_advice
+  steps:
+    - intent: ask_high_fever_advice
+    - action: utter_high_fever_advice
+
+- story: respond_to_stomach_pain_advice
+  steps:
+    - intent: ask_stomach_pain_advice
+    - action: utter_stomach_pain_advice
+
+- story: respond_to_doctor_schedule
+  steps:
+    - intent: ask_doctor_schedule
+    - action: utter_doctor_schedule
+
+- story: respond_to_headache_advice
+  steps:
+    - intent: ask_headache_advice
+    - action: utter_headache_advice
+
+- story: respond_to_cold_flu_advice
+  steps:
+    - intent: ask_cold_flu_advice
+    - action: utter_cold_flu_advice
+
+- story: respond_to_diet_advice
+  steps:
+    - intent: ask_diet_advice
+    - action: utter_diet_advice
+
+- story: respond_to_skin_care_advice
+  steps:
+    - intent: ask_skin_care_advice
+    - action: utter_skin_care_advice
+
+- story: respond_to_sleep_advice
+  steps:
+    - intent: ask_sleep_advice
+    - action: utter_sleep_advice
+
+- story: respond_to_weight_loss_advice
+  steps:
+    - intent: ask_weight_loss_advice
+    - action: utter_weight_loss_advice
+
+- story: respond_to_weight_gain_advice
+  steps:
+    - intent: ask_weight_gain_advice
+    - action: utter_weight_gain_advice
+
+- story: respond_to_diabetes_advice
+  steps:
+    - intent: ask_diabetes_advice
+    - action: utter_diabetes_advice
+
+- story: respond_to_blood_pressure_advice
+  steps:
+    - intent: ask_blood_pressure_advice
+    - action: utter_blood_pressure_advice
+
+- story: respond_to_allergy_advice
+  steps:
+    - intent: ask_allergy_advice
+    - action: utter_allergy_advice
+
+- story: respond_to_injury_advice
+  steps:
+    - intent: ask_injury_advice
+    - action: utter_injury_advice
+
+- story: respond_to_depression_advice
+  steps:
+    - intent: ask_depression_advice
+    - action: utter_depression_advice
+
+- story: respond_to_anxiety_advice
+  steps:
+    - intent: ask_anxiety_advice
+    - action: utter_anxiety_advice
+
+- story: respond_to_back_pain_advice
+  steps:
+    - intent: ask_back_pain_advice
+    - action: utter_back_pain_advice
+
+- story: respond_to_joint_pain_advice
+  steps:
+    - intent: ask_joint_pain_advice
+    - action: utter_joint_pain_advice
+
+- story: respond_to_healthy_habits_advice
+  steps:
+    - intent: ask_healthy_habits_advice
+    - action: utter_healthy_habits_advice
+
+- story: respond_to_mental_health_advice
+  steps:
+    - intent: ask_mental_health_advice
+    - action: utter_mental_health_advice
+
+- story: respond_to_hydration_advice
+  steps:
+    - intent: ask_hydration_advice
+    - action: utter_hydration_advice
+
+- story: respond_to_eye_care_advice
+  steps:
+    - intent: ask_eye_care_advice
+    - action: utter_eye_care_advice
+
+- story: respond_to_cough_advice
+  steps:
+    - intent: ask_cough_advice
+    - action: utter_cough_advice
+
+- story: respond_to_hygiene_advice
+  steps:
+    - intent: ask_hygiene_advice
+    - action: utter_hygiene_advice
+
+- story: respond_to_fatigue_advice
+  steps:
+    - intent: ask_fatigue_advice
+    - action: utter_fatigue_advice
+
+- story: respond_to_head_cold_advice
+  steps:
+    - intent: ask_head_cold_advice
+    - action: utter_head_cold_advice
+
+- story: respond_to_sore_throat_advice
+  steps:
+    - intent: ask_sore_throat_advice
+    - action: utter_sore_throat_advice
+
+- story: respond_to_insomnia_advice
+  steps:
+    - intent: ask_insomnia_advice
+    - action: utter_insomnia_advice
+
+- story: respond_to_sunburn_advice
+  steps:
+    - intent: ask_sunburn_advice
+    - action: utter_sunburn_advice
+- story: schedule an appointment
+  steps:
+  - intent: schedule_appointment
+    entities:
+      - date: "September 5th"
+      - time: "10 AM"
+  - action: utter_confirm_appointment
+
+- story: reschedule an appointment
+  steps:
+  - intent: schedule_appointment
+    entities:
+      - date: "September 6th"
+      - time: "3 PM"
+  - action: utter_reschedule_appointment
